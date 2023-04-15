@@ -1,0 +1,113 @@
+.swiperProjects {
+  width: 100%;
+  height: auto;
+}
+
+.swiperSlideProjects {
+  text-align: center;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c13213 !important;
+}
+
+.swiperProjects img {
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.icon-class {
+  font-size: 4rem;
+  color: #c13213;
+}
+
+.links::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #c13213;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.2s all linear;
+}
+
+.links:hover::after {
+  width: 100%;
+  height: 3px;
+}
+
+.navbar--hidden {
+  display: none;
+}
+
+.navbar--shown {
+  display: flex;
+}
+
+.swiperAbout {
+  width: 100%;
+  height: 60%;
+  margin: 0px 50px !important;
+}
+
+.swiperSlideAbout {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border:1px solid rgba(255, 255, 255, 0.18);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.swiperSlideAbout:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #c13213 !important;
+}
+
+.gallerySwiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.gallerySwiperSlide {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.gallerySwiperSlide img {
+  width: auto;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+@media screen and (max-width: 768px) {
+  .swiperAbout {
+    margin: 0px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ReactModal__Content {
+    width: 100% !important;
+    height: 90% !important;
+  }
+}
