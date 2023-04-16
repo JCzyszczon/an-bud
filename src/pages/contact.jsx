@@ -89,7 +89,7 @@ const Contact = () => {
                     <FaHome className="md:text-5xl text-4xl text-[#c13213]"/>
                     <div className="flex justify-center items-start flex-col">
                         <p className="md:text-xl text-lg">Bystra Podhalańska 616</p>
-                        <p className="md:text-base text-sm text-[#555]">34-240, Małopolska, PL</p>
+                        <p className="md:text-base text-sm text-[#555]">34-235, Małopolska, PL</p>
                     </div>
                 </section></a>
                 <a href="callto:+48515041119" className="lg:w-full w-auto hover:bg-[#eee] transition-all duration-200"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto lg:border-r-2 border-r-0 border-[#555] max-[300px]:flex-wrap lg:py-2 py-0">

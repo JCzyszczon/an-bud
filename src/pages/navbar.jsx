@@ -57,7 +57,7 @@ const Navbar = () => {
           <a href="/"><img src={Logo} alt="Logo" className='w-[170px] h-auto'/></a>
           <nav className='w-full flex justify-end items-center'>
               <ul className='justify-end items-center gap-10 text-[22px] hidden lg:flex'>
-                  <li className='relative'><a href='/an-bud/' className='links'>Strona główna</a></li>
+                  <li className='relative'><a href='/' className='links'>Strona główna</a></li>
                   <li className='relative'><Link to='projects' smooth={true} duration={300} className='links cursor-pointer'>Projekty</Link></li>
                   <li className='relative'><a href='/galeria' className='links'>Galeria</a></li>
                   <li className='relative'><a href='/oferta' className='links'>Oferta</a></li>
@@ -79,10 +79,10 @@ const Navbar = () => {
                   transition={{ duration: 0.5, type: "tween", bounce: 0}}
               >
                   <li className='py-6 text-4xl'>
-                  <a href="/an-bud">Strona główna</a>
+                  <a href="/">Strona główna</a>
                   </li>
                   <li className='py-6 text-4xl'>
-                  <a href="/an-bud">Projekty</a>
+                  <a href="/">Projekty</a>
                   </li>
                   <li className='py-6 text-4xl'>
                   <a href="/galeria">Galeria</a>
