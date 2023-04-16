@@ -13,9 +13,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path='/an-bud/' element={<MainPanel/>}/>
-        <Route exact path='/an-bud/oferta' element={<Offer/>}/>
-        <Route exact path='/an-bud/kontakt' element={<Contact/>}/>
-        <Route exact path='/an-bud/galeria' element={<Gallery/>}/>
+        <Route path='/oferta' element={<Offer/>}/>
+        <Route path='/kontakt' element={<Contact/>}/>
+        <Route path='/galeria' element={<Gallery/>}/>
       </Routes>
     </>
   );
