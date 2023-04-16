@@ -75,7 +75,7 @@ const ContactComponent = () => {
                     <FaHome className="md:text-5xl text-2xl text-[#c13213]"/>
                     <div className="flex justify-center items-start flex-col">
                         <p className="md:text-xl text-base">Bystra Podhalańska 616</p>
-                        <p className="md:text-base text-sm text-[#555]">34-240, Małopolska, PL</p>
+                        <p className="md:text-base text-sm text-[#555]">34-235, Małopolska, PL</p>
                     </div>
                 </section>
                 <section className="flex justify-start items-center gap-8 2xl:w-[500px] w-auto max-[300px]:flex-wrap">

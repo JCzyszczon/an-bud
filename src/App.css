@@ -111,3 +111,15 @@
     height: 90% !important;
   }
 }
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hideScroll::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.hideScroll::-webkit-scrollbar-track {
+  display: none;
+}
