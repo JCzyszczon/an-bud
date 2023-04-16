@@ -12,10 +12,10 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route exact path='/' element={<MainPanel/>}/>
-        <Route exact path='/oferta' element={<Offer/>}/>
-        <Route exact path='/kontakt' element={<Contact/>}/>
-        <Route exact path='/galeria' element={<Gallery/>}/>
+        <Route exact path='/an-bud/' element={<MainPanel/>}/>
+        <Route exact path='/an-bud/oferta' element={<Offer/>}/>
+        <Route exact path='/an-bud/kontakt' element={<Contact/>}/>
+        <Route exact path='/an-bud/galeria' element={<Gallery/>}/>
       </Routes>
     </>
   );
