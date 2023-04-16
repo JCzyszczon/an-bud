@@ -69,7 +69,7 @@ const ContactComponent = () => {
   return (
     <section ref={ref} id='contact' className="w-full h-auto ">
         <motion.h2 animate={animationOpacity} className="w-full md:text-6xl text-4xl font-extrabold tracking-tighter text-[#c13213] md:px-24 px-0 md:pt-16 pt-10 md:text-start text-center">Kontakt</motion.h2>
-        <motion.section animate={animationPic2} className="w-full h-auto flex justify-between items-center md:my-10 my-2 lg:flex-row flex-col">
+        <motion.section animate={animationPic2} className="w-full h-auto flex sm:justify-between justify-center items-center md:my-10 my-2 lg:flex-row flex-col">
             <address className="w-full h-full flex sm:justify-center justify-center items-center gap-8 not-italic lg:flex-col flex-row flex-wrap lg:my-0 my-10 sm:px-0 px-2">
                 <section className="flex justify-start items-center gap-8 2xl:w-[500px] w-auto max-[300px]:flex-wrap">
                     <FaHome className="md:text-5xl text-2xl text-[#c13213]"/>

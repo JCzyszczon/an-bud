@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import GalleryBackground from '../images/galleryBackground.jpeg';
 import GalleryMobile from '../images/galleryMobile.jpeg';
 import { Parallax } from "react-parallax";

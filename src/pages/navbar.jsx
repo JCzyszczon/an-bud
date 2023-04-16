@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../images/logo-an-bud.png';
 import {FiMenu} from 'react-icons/fi';
 import {CgClose} from 'react-icons/cg';
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
-import {MdOutlineKeyboardArrowDown, MdLocalPostOffice} from 'react-icons/md';
-import { FaPhoneAlt, FaMapPin, FaArrowRight } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { MdLocalPostOffice } from 'react-icons/md';
+import { FaPhoneAlt, FaMapPin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -16,12 +15,6 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-
-  const {ref, inView} = useInView({
-    threshold: 0.5,
-  });
-  const animationPic = useAnimation();
-  const animationPic2 = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,14 +51,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-  const scrollRef = React.useRef(null);
-
-  const handleScrollToSection = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <header className={`navbar ${visible ? "navbar--shown" : "navbar--hidden"} w-full h-auto flex justify-between items-center fixed left-0 top-0 z-[100] sm:px-10 px-2 transition-all duration-500`} style={{ background: navbarBackground, color: navbarText }}>
@@ -81,15 +66,12 @@ const Navbar = () => {
               <div onClick={handleClick} className='lg:hidden z-10 text-3xl'>
                   {!nav ? <FiMenu className='text-[#c13213]' /> : <CgClose className='text-[#c13213]'/>}
               </div>
-
-              {/* Mobile menu */}
               <motion.ul
                   className={
                       !nav
                           ? 'hidden'
                           : 'absolute top-0 left-0 w-full h-screen bg-[#fff] text-[#c13213] flex flex-col justify-center items-center'
                   }
-                  ref={ref}
                   initial={{ y: "-100%" }}
                   animate={{
                       y: nav ? "0%" : "-100%",
@@ -114,15 +96,15 @@ const Navbar = () => {
               </motion.ul>
           </nav>
       </header>
-      <aside className='hidden lg:flex fixed flex-col bottom-[15%] right-0 z-[3]'>
+      <aside className='hidden lg:flex fixed flex-col bottom-[15%] right-0 z-[3] mr-[-250px] hover:mr-[-10px] duration-300'>
             <ul>
-              <li className='w-[320px] h-[60px] flex justify-around items-center mr-[-250px] hover:mr-[-10px] px-5 duration-300 bg-[#c13213] hover:bg-[#b02102] border-b border-[#aaa]'>
+              <li className='w-[320px] h-[60px] flex justify-around items-center px-5 duration-300 bg-[#c13213] hover:bg-[#b02102] border-b border-[#aaa]'>
                 <a className='flex justify-between items-center w-full text-gray-300 h-full text-lg' href='callto:+48515041119'><FaPhoneAlt className='text-2xl'/>+48 515 041 119</a>
               </li>
-              <li className='w-[320px] h-[60px] flex justify-around items-center mr-[-250px] hover:mr-[-10px] px-5 duration-300 bg-[#c13213] hover:bg-[#b02102] border-b border-[#aaa]'>
+              <li className='w-[320px] h-[60px] flex justify-around items-center px-5 duration-300 bg-[#c13213] hover:bg-[#b02102] border-b border-[#aaa]'>
                 <a className='flex justify-between items-center w-full text-gray-300 h-full text-lg' href='mailto:galkaandrzej4@gmail.com'><MdLocalPostOffice className='text-2xl'/>galkaandrzej4@gmail.com</a>
               </li>
-              <li className='w-[320px] h-[60px] flex justify-around items-center mr-[-250px] hover:mr-[-10px] px-5 duration-300 bg-[#c13213] hover:bg-[#b02102]'>
+              <li className='w-[320px] h-[60px] flex justify-around items-center px-5 duration-300 bg-[#c13213] hover:bg-[#b02102]'>
                 <a className='flex justify-between items-center w-full text-gray-300 h-full text-lg' href='https://goo.gl/maps/r8Fh591Cst45H7gK7' target='_blank' rel="noreferrer"><FaMapPin className='text-2xl'/>Bystra, Podhalańska 616</a>
               </li>
             </ul>

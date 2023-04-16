@@ -85,21 +85,21 @@ const Contact = () => {
       </Parallax>
       <motion.section id='contact2' className="w-full h-auto flex justify-center items-center md:my-16 my-10 flex-col lg:gap-20 gap-10">
             <address className="w-full h-full flex justify-center items-center lg:gap-0 gap-8 not-italic flex-row lg:flex-nowrap flex-wrap lg:px-20 md:px-20 px-5">
-                <a href='https://goo.gl/maps/r8Fh591Cst45H7gK7' target='_blank' rel="noreferrer" className="lg:w-full w-auto hover:bg-[#eee]"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto lg:border-r-2 border-r-0 border-[#555] max-[300px]:flex-wrap lg:py-2 py-0">
+                <a href='https://goo.gl/maps/r8Fh591Cst45H7gK7' target='_blank' rel="noreferrer" className="lg:w-full w-auto hover:bg-[#eee] transition-all duration-200"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto lg:border-r-2 border-r-0 border-[#555] max-[300px]:flex-wrap lg:py-2 py-0">
                     <FaHome className="md:text-5xl text-4xl text-[#c13213]"/>
                     <div className="flex justify-center items-start flex-col">
                         <p className="md:text-xl text-lg">Bystra Podhalańska 616</p>
                         <p className="md:text-base text-sm text-[#555]">34-240, Małopolska, PL</p>
                     </div>
                 </section></a>
-                <a href="callto:+48515041119" className="lg:w-full w-auto hover:bg-[#eee]"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto lg:border-r-2 border-r-0 border-[#555] max-[300px]:flex-wrap lg:py-2 py-0">
+                <a href="callto:+48515041119" className="lg:w-full w-auto hover:bg-[#eee] transition-all duration-200"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto lg:border-r-2 border-r-0 border-[#555] max-[300px]:flex-wrap lg:py-2 py-0">
                     <FaPhoneAlt className="md:text-5xl text-4xl text-[#c13213]"/>
                     <div className="flex justify-center items-start flex-col">
                         <p className="md:text-xl text-lg">+48 515 041 119</p>
                         <p className="md:text-base text-sm text-[#555]">Od poniedziałku do soboty</p>
                     </div>
                 </section></a>
-                <a href="mailto:galkaandrzej4@gmail.com" className="lg:w-full w-auto hover:bg-[#eee]"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto max-[300px]:flex-wrap lg:py-2 py-0">
+                <a href="mailto:galkaandrzej4@gmail.com" className="lg:w-full w-auto hover:bg-[#eee] transition-all duration-200"><section className="flex lg:justify-center justify-start items-center gap-8 lg:w-full w-auto max-[300px]:flex-wrap lg:py-2 py-0">
                     <MdEmail className="md:text-5xl text-4xl text-[#c13213]"/>
                     <div className="flex justify-center items-start flex-col">
                         <p className="md:text-xl text-lg">galkaandrzej4@gmail.com</p>
@@ -107,7 +107,7 @@ const Contact = () => {
                     </div>
                 </section></a>
             </address>
-            <a href="callto:+48515041119"><button className="bg-[#c13213] px-10 py-5 rounded-lg text-[#fff] hover:bg-[#b02102]">Zadzwoń teraz</button></a>
+            <a href="callto:+48515041119"><button className="bg-[#c13213] px-10 py-5 rounded-lg text-[#fff] hover:bg-[#b02102] transition-all duration-200">Zadzwoń teraz</button></a>
         </motion.section>
         <section className="w-full h-auto flex justify-center items-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.935163621376!2d19.767323551640484!3d49.6366765792701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715d89f99667571%3A0xaa6bf296423187dc!2sBystra%20Podhala%C5%84ska%20616%2C%2034-235%20Bystra%20Podhala%C5%84ska!5e0!3m2!1spl!2spl!4v1680523056566!5m2!1spl!2spl" title="location" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full md:h-[550px] h-[300px] drop-shadow-lg md:px-20 px-5 md:pb-10 pb-5"></iframe>

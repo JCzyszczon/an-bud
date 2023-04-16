@@ -38,7 +38,7 @@ const customStyles = {
   }
 }
 
-Modal.setAppElement('#root'); // ustawiamy element aplikacji, na którym ma być umieszczany modal
+Modal.setAppElement('#root');
 
 const GallerySalony = () => {
 
@@ -53,10 +53,6 @@ const GallerySalony = () => {
   const getSlide = (item, index) => {
     setCurrentIndex(index);
     setClickedSlide(item);
-    setIsModalOpen(true);
-  }
-
-  function openModal() {
     setIsModalOpen(true);
   }
 

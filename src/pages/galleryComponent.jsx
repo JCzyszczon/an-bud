@@ -1,23 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
-import GalleryBackground from '../images/galleryBackground.jpeg';
-import GalleryMobile from '../images/galleryMobile.jpeg';
-import { Parallax } from "react-parallax";
-import { Link } from 'react-scroll';
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
-import {MdOutlineKeyboardArrowDown} from 'react-icons/md';
-import ContactComponent from "./contactComponent";
-import Footer from "./footerComponent";
+import React, { useState } from "react";
 import GalleryŁazienki from "./galleryŁazienki";
 import GalleryKuchnie from "./galleryKuchnie";
 import GallerySalony from "./gallerySalony";
 import GalleryKlatki from "./galleryKlatki";
 import GalleryKorytarze from "./galleryKorytarze";
 import GalleryWiaty from "./galleryWiaty";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
 
 function PrzyciskSekcji({ section, isSelected, onClick }) {
   const buttonStyle = {
@@ -35,42 +22,6 @@ function PrzyciskSekcji({ section, isSelected, onClick }) {
 }
 
 const GalleryComponent = () => {
-  /*useEffect(() => {
-    if(inView) {
-      animationOpacity.start({
-        opacity: 1,
-        transition: {
-          type: 'tween',
-          duration: 0.5,
-        }
-      });
-      animationPic2.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: 'tween',
-          duration: 0.5,
-        }
-      });
-    } if(!inView) {
-      animationOpacity.start({
-        opacity: 0,
-        transition: {
-          type: 'tween',
-          duration: 0.5,
-        }
-      });
-      animationPic2.start({
-        x: '-100px',
-        opacity: 0,
-        transition: {
-          type: 'tween',
-          duration: 0.5,
-        }
-      });
-    }
-
-  }, [inView]);*/
 
   const [selectedSection, setSelectedSection] = useState('łazienki');
 
@@ -122,8 +73,7 @@ const GalleryComponent = () => {
         <GalleryWiaty/>
       ) : (
         <GalleryŁazienki/>
-      )}
-      
+      )} 
     </section>
   );
 

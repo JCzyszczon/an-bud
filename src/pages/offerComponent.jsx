@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AboutBackground from '../images/aboutBackground.jpeg'
 import { Parallax } from "react-parallax";
 import { motion, useAnimation } from "framer-motion";
