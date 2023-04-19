@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import MainPanel from './pages/mainPanel';
 import Navbar from './pages/navbar';
 import Offer from './pages/offer';
@@ -9,7 +9,7 @@ import Gallery from './pages/gallery';
 function App() {
 
   return (
-    <BrowserRouter>
+    <>
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<MainPanel/>}/>
@@ -17,7 +17,7 @@ function App() {
         <Route path='/kontakt' element={<Contact/>}/>
         <Route path='/galeria' element={<Gallery/>}/>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
