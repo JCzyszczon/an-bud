@@ -28,7 +28,7 @@ const Contact = () => {
         setBgImage(ContactBackground);
       }
     }
-
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

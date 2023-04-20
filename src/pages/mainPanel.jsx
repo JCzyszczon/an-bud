@@ -36,7 +36,7 @@ const MainPanel = () => {
         setTransitionVal('0%');
       }
     }
-
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

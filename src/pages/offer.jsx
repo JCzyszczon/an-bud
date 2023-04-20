@@ -23,7 +23,7 @@ const Offer = () => {
         setBgImage(AboutBackground);
       }
     }
-
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

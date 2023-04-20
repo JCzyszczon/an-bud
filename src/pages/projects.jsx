@@ -70,7 +70,7 @@ const Projects = () => {
         setItemsNumber(3);
       }
     }
-
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -100,7 +100,7 @@ const Projects = () => {
                 </SwiperSlide>
             ))}
         </Swiper>
-        <a href="/galeria"><span className='bg-[#c13213] hover:bg-[#d24324] text-[#fff] w-[250px] h-[250px] lg:flex hidden justify-center items-center absolute right-0 top-0 rounded-full translate-x-12 -translate-y-12 text-lg transition-all duration-200'>Sprawdź zdjęcia!</span></a>
+        <a href="/#/galeria"><span className='bg-[#c13213] hover:bg-[#d24324] text-[#fff] w-[250px] h-[250px] lg:flex hidden justify-center items-center absolute right-0 top-0 rounded-full translate-x-12 -translate-y-12 text-lg transition-all duration-200'>Sprawdź zdjęcia!</span></a>
         <span className='bg-[#c13213] hover:bg-[#d24324] text-[#fff] w-[200px] h-[200px] lg:flex hidden justify-center items-center absolute right-[12%] translate-y-40 bottom-0 rounded-full'></span>
         <span className='bg-[#c13213] hover:bg-[#d24324] text-[#fff] w-[200px] h-[200px] lg:flex hidden justify-center items-center absolute left-[0%] top-[25%] -translate-x-20 rounded-full'></span>
     </section>

@@ -109,13 +109,14 @@ const OfferComponent = () => {
         setBgImage(OfferMobile);
         setItemsNumber(2);
       } else if (window.innerWidth <=500) {
+        setBgImage(OfferMobile);
         setItemsNumber(1);
       } else {
         setBgImage(AboutBackground);
         setItemsNumber(4);
       }
     }
-
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
