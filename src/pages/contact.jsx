@@ -34,6 +34,10 @@ const Contact = () => {
   }, []);
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
     if(inView) {
       animationOpacity.start({
         opacity: 1,

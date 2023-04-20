@@ -70,6 +70,10 @@ const Gallery = () => {
 
   }, [inView]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className="">
         <Parallax blur={0} strength={300} bgImage={bgImage} bgImageAlt='Background'>

@@ -79,19 +79,19 @@ const Navbar = () => {
                   transition={{ duration: 0.5, type: "tween", bounce: 0}}
               >
                   <li className='py-6 text-4xl'>
-                  <a href="/">Strona główna</a>
+                  <a href="/" onClick={handleClick}>Strona główna</a>
                   </li>
                   <li className='py-6 text-4xl'>
-                  <Link to='projects' smooth={true} duration={300}>Projekty</Link>
+                  <Link to='projects' onClick={handleClick} smooth={true} duration={300}>Projekty</Link>
                   </li>
                   <li className='py-6 text-4xl'>
-                  <a href="/#/galeria">Galeria</a>
+                  <a href="/#/galeria" onClick={handleClick}>Galeria</a>
                   </li>
                   <li className='py-6 text-4xl'>
-                  <a href="/#/oferta">Oferta</a>  
+                  <a href="/#/oferta" onClick={handleClick}>Oferta</a>  
                   </li>
                   <li className='py-6 text-4xl'>
-                  <a href="/#/kontakt">Kontakt</a>
+                  <a href="/#/kontakt" onClick={handleClick}>Kontakt</a>
                   </li>
               </motion.ul>
           </nav>
