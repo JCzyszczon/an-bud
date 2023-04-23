@@ -3,6 +3,10 @@ body {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.0);
+}
+
 .swiperProjects {
   width: 100% !important;
   height: 100% !important;
