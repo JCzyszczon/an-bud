@@ -86,10 +86,10 @@ const GalleryŁazienki = () => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "overlay";
+      document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = "overlay";
+      document.body.style.overflow = "auto";
     };
   }, [isModalOpen]);
 
