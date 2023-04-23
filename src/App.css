@@ -1,3 +1,8 @@
+body {
+  overflow: overlay;
+  scroll-behavior: smooth;
+}
+
 .swiperProjects {
   width: 100% !important;
   height: 100% !important;
