@@ -9,6 +9,7 @@ import {MdOutlineKeyboardArrowDown} from 'react-icons/md';
 import ContactComponent from "./contactComponent";
 import Footer from "./footerComponent";
 import GalleryComponent from "./galleryComponent";
+import { Helmet } from "react-helmet-async";
 
 const Gallery = () => {
 
@@ -76,9 +77,14 @@ const Gallery = () => {
 
   return (
     <section className="">
+        <Helmet>
+          <title>AN-BUD - Galeria</title>
+          <meta name="description" content="Zobacz nasze projekty!" />
+          <link rel="canonical" href="/galeria" />
+        </Helmet>
         <Parallax blur={0} strength={300} bgImage={bgImage} bgImageAlt='Background'>
             <section ref={ref} className="w-full md:h-[70vh] h-[50vh] flex justify-center items-center relative text-center">
-                <motion.h2 animate={animationPic2} className="md:text-7xl text-5xl tracking-tighter font-extrabold text-[#fff]">Sprawdź nasze<span className="text-[#c13213]"> projekty!</span></motion.h2>
+                <motion.h1 animate={animationPic2} className="md:text-7xl text-5xl tracking-tighter font-extrabold text-[#fff]">Sprawdź nasze<span className="text-[#c13213]"> projekty!</span></motion.h1>
                 <Link to='gallery' smooth='true' duration={400} className='cursor-pointer'>
                     <motion.div animate={animationOpacity} className='absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center animate-bounceGallery w-full'>
                         <p className='text-[#ccc] sm:text-2xl text-xl font-extralight'>Zobacz teraz!</p>

@@ -10,6 +10,7 @@ import Footer from "./footerComponent";
 import AboutComponent from "./aboutComponent";
 import OfferComponent from "./offerComponent";
 import OfferMobile from '../images/offerMobile.jpeg';
+import { Helmet } from "react-helmet-async";
 
 const Offer = () => {
 
@@ -77,9 +78,14 @@ const Offer = () => {
 
   return (
     <section className="">
+      <Helmet>
+        <title>AN-BUD - Oferta</title>
+        <meta name="description" content="Czym się zajmujemy? Dowiedz się o nas więcej i zobacz naszą ofertę." />
+        <link rel="canonical" href="/oferta" />
+      </Helmet>
       <Parallax blur={0} strength={300} bgImage={bgImage} bgImageAlt='Background'>
         <section ref={ref} className="w-full md:h-[70vh] h-[50vh] flex justify-center items-center relative text-center">
-          <motion.h2 animate={animationPic2} className="md:text-7xl text-5xl tracking-tighter font-extrabold text-[#fff]">Czym się <span className="text-[#c13213]">zajmujemy?</span></motion.h2>
+          <motion.h1 animate={animationPic2} className="md:text-7xl text-5xl tracking-tighter font-extrabold text-[#fff]">Czym się <span className="text-[#c13213]">zajmujemy?</span></motion.h1>
             <Link to='about' smooth='true' duration={400} className='cursor-pointer'>
                 <motion.div animate={animationOpacity} className='absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center animate-bounceGallery w-full'>
                     <p className='text-[#ccc] sm:text-2xl text-xl font-extralight'>Dowiedz się!</p>

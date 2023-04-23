@@ -77,7 +77,7 @@ const Projects = () => {
 
   return (
     <section ref={ref} id='projects' className='w-full h-auto flex justify-center lg:items-start items-center flex-col md:py-20 py-10 bg-[#fff] relative overflow-hidden'>
-        <motion.h1 animate={animationPic2} className='md:text-6xl sm:text-4xl text-3xl text-[#c13213] font-extrabold tracking-tighter lg:px-20 px-2 md:pb-20 pb-10 lg:text-start text-center'>Nasze najnowsze projekty</motion.h1>
+        <motion.h2 animate={animationPic2} className='md:text-6xl sm:text-4xl text-3xl text-[#c13213] font-extrabold tracking-tighter lg:px-20 px-2 md:pb-20 pb-10 lg:text-start text-center'>Nasze najnowsze projekty</motion.h2>
         <Swiper
         spaceBetween={30}
         slidesPerView={itemsNumber}
